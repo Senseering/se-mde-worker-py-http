@@ -1,0 +1,46 @@
+{
+  "credentials": "fff02a50-fcd3-11ea-83bf-67c4ff9d51d4:e52321b0bdb74370b50ff3ad915a95ef",
+  "url": "https://finova.test.senseering.net",
+  "settings": {
+    "qualityOfService": 1,
+    "messageRetries": 3,
+    "messageTimeout": 200000
+  },
+  "payment": {
+    "fixCost": 0,
+    "isFixCostOnly": false
+  },
+  "profile": {
+    "name": "http-AcousticEmission",
+    "location": {
+      "latitude": 52.5297268,
+      "longitude": 13.400391
+    }
+  },
+  "privkey": "./env/key.pem",
+  "schema": {
+    "input": "./env/schema/input.json",
+    "output": "./env/schema/output.json"
+  },
+  "info": {
+    "worker": {
+      "description": "./env/description/worker.md",
+      "tags": [
+        "image processing"
+      ]
+    },
+    "input": {
+      "description": "./env/description/input.md",
+      "tags": [
+        "h"
+      ]
+    },
+    "output": {
+      "description": "./env/description/output.md",
+      "tags": [
+        ""
+      ]
+    }
+  },
+  "meta": {}
+}

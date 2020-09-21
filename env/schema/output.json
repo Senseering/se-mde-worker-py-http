@@ -1,0 +1,414 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "default": {},
+    "examples": [
+        {
+            "pos": [
+                1.2,
+                3.2
+            ],
+            "cut": {
+                "raw": [
+                    1.2,
+                    3.2
+                ],
+                "fft": [
+                    1.2,
+                    3.2
+                ],
+                "volume": 2.3
+            },
+            "abstreif": {
+                "raw": [
+                    1.2,
+                    3.2
+                ],
+                "fft": [
+                    1.2,
+                    3.2
+                ],
+                "volume": 2.3
+            },
+            "fft": [
+                1.2,
+                3.2
+            ],
+            "volume": 2.3,
+            "volatility": 2.3,
+            "max_amp": 2.3,
+            "stdDev": 2.3,
+            "skew": 2.3,
+            "kurtosis_rechts": 2.3,
+            "ae_raw": [
+                1.2,
+                3.2
+            ]
+        }
+    ],
+    "required": [
+        "pos",
+        "cut",
+        "abstreif",
+        "fft",
+        "volume",
+        "volatility",
+        "max_amp",
+        "stdDev",
+        "skew",
+        "kurtosis_rechts",
+        "ae_raw"
+    ],
+    "properties": {
+        "pos": {
+            "$id": "#/properties/pos",
+            "type": "array",
+            "title": "The pos schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    1.2,
+                    3.2
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/pos/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/pos/items/anyOf/0",
+                        "type": "number",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                            1.2,
+                            3.2
+                        ]
+                    }
+                ]
+            }
+        },
+        "cut": {
+            "$id": "#/properties/cut",
+            "type": "object",
+            "title": "The cut schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "raw": [
+                        1.2,
+                        3.2
+                    ],
+                    "fft": [
+                        1.2,
+                        3.2
+                    ],
+                    "volume": 2.3
+                }
+            ],
+            "required": [
+                "raw",
+                "fft",
+                "volume"
+            ],
+            "properties": {
+                "raw": {
+                    "$id": "#/properties/cut/properties/raw",
+                    "type": "array",
+                    "title": "The raw schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            1.2,
+                            3.2
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/cut/properties/raw/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/cut/properties/raw/items/anyOf/0",
+                                "type": "number",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0.0,
+                                "examples": [
+                                    1.2,
+                                    3.2
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "fft": {
+                    "$id": "#/properties/cut/properties/fft",
+                    "type": "array",
+                    "title": "The fft schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            1.2,
+                            3.2
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/cut/properties/fft/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/cut/properties/fft/items/anyOf/0",
+                                "type": "number",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0.0,
+                                "examples": [
+                                    1.2,
+                                    3.2
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "volume": {
+                    "$id": "#/properties/cut/properties/volume",
+                    "type": "number",
+                    "title": "The volume schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        2.3
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "abstreif": {
+            "$id": "#/properties/abstreif",
+            "type": "object",
+            "title": "The abstreif schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+                {
+                    "raw": [
+                        1.2,
+                        3.2
+                    ],
+                    "fft": [
+                        1.2,
+                        3.2
+                    ],
+                    "volume": 2.3
+                }
+            ],
+            "required": [
+                "raw",
+                "fft",
+                "volume"
+            ],
+            "properties": {
+                "raw": {
+                    "$id": "#/properties/abstreif/properties/raw",
+                    "type": "array",
+                    "title": "The raw schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            1.2,
+                            3.2
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/abstreif/properties/raw/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/abstreif/properties/raw/items/anyOf/0",
+                                "type": "number",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0.0,
+                                "examples": [
+                                    1.2,
+                                    3.2
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "fft": {
+                    "$id": "#/properties/abstreif/properties/fft",
+                    "type": "array",
+                    "title": "The fft schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": [],
+                    "examples": [
+                        [
+                            1.2,
+                            3.2
+                        ]
+                    ],
+                    "additionalItems": true,
+                    "items": {
+                        "$id": "#/properties/abstreif/properties/fft/items",
+                        "anyOf": [
+                            {
+                                "$id": "#/properties/abstreif/properties/fft/items/anyOf/0",
+                                "type": "number",
+                                "title": "The first anyOf schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0.0,
+                                "examples": [
+                                    1.2,
+                                    3.2
+                                ]
+                            }
+                        ]
+                    }
+                },
+                "volume": {
+                    "$id": "#/properties/abstreif/properties/volume",
+                    "type": "number",
+                    "title": "The volume schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0.0,
+                    "examples": [
+                        2.3
+                    ]
+                }
+            },
+            "additionalProperties": true
+        },
+        "fft": {
+            "$id": "#/properties/fft",
+            "type": "array",
+            "title": "The fft schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    1.2,
+                    3.2
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/fft/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/fft/items/anyOf/0",
+                        "type": "number",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                            1.2,
+                            3.2
+                        ]
+                    }
+                ]
+            }
+        },
+        "volume": {
+            "$id": "#/properties/volume",
+            "type": "number",
+            "title": "The volume schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                2.3
+            ]
+        },
+        "volatility": {
+            "$id": "#/properties/volatility",
+            "type": "number",
+            "title": "The volatility schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                2.3
+            ]
+        },
+        "max_amp": {
+            "$id": "#/properties/max_amp",
+            "type": "number",
+            "title": "The max_amp schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                2.3
+            ]
+        },
+        "stdDev": {
+            "$id": "#/properties/stdDev",
+            "type": "number",
+            "title": "The stdDev schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                2.3
+            ]
+        },
+        "skew": {
+            "$id": "#/properties/skew",
+            "type": "number",
+            "title": "The skew schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                2.3
+            ]
+        },
+        "kurtosis_rechts": {
+            "$id": "#/properties/kurtosis_rechts",
+            "type": "number",
+            "title": "The kurtosis_rechts schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0.0,
+            "examples": [
+                2.3
+            ]
+        },
+        "ae_raw": {
+            "$id": "#/properties/ae_raw",
+            "type": "array",
+            "title": "The ae_raw schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+                [
+                    1.2,
+                    3.2
+                ]
+            ],
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/ae_raw/items",
+                "anyOf": [
+                    {
+                        "$id": "#/properties/ae_raw/items/anyOf/0",
+                        "type": "number",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                            1.2,
+                            3.2
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "additionalProperties": true
+}
