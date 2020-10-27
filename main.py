@@ -1,5 +1,5 @@
 #from src.reader import reader
-import Worker
+from setup import Worker
 
 worker = Worker()
 worker.connect()
