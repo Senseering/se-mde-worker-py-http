@@ -1,6 +1,6 @@
 {
-  "credentials": "fff02a50-fcd3-11ea-83bf-67c4ff9d51d4:e52321b0bdb74370b50ff3ad915a95ef",
-  "url": "https://finova.test.senseering.net",
+  "credentials": "1a286e80-30c5-11eb-9dc9-dd9de02733aa:781cda082e384141b49b083cecc8daed",
+  "url": "https://feintool.spaicer.senseering.net",
   "settings": {
     "qualityOfService": 1,
     "messageRetries": 3,
@@ -11,7 +11,7 @@
     "isFixCostOnly": false
   },
   "profile": {
-    "name": "http-AcousticEmission",
+    "name": "testWorker",
     "location": {
       "latitude": 52.5297268,
       "longitude": 13.400391
