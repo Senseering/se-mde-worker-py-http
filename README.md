@@ -1,6 +1,6 @@
 ## Things to be done
  - adjust config file (credentials + url) 
- - adjust schema (must match the data ) 
+ - adjust schema in `env/schema` (must match the data ) 
 
 ## Start
 ```py
